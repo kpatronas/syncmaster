@@ -11,11 +11,11 @@ Do you want to sync data from / to servers but you miss the following features?
 You can use this super easy bash script that wraps rsync
 
 Usage:
--t: transfers space separated
+* -t: transfers space separated
     each transfer is delimited by ";" first  column: source
                                       second column: destination
                                       third  column: bandwidth
--p: concurrent parallel transfers
+* -p: concurrent parallel transfers
 
 Example: local dir sync
 ```

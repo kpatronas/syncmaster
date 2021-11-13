@@ -7,6 +7,7 @@ Do you want to sync data from / to servers but you miss the following features?
 * Resume file sync from where stopped
 * Limit bandwidth per rsync job
 * Append only new files
+* Ensure that another syncmaster rsync will not start until current has completed
 
 You can use this super easy bash script that wraps rsync
 

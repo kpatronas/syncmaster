@@ -9,7 +9,7 @@ function transfer
     local bnd=$3
 
     echo "STARTING - SOURCE: ${src} TARGET: ${trg} BANDWIDTH: ${bnd}"
-    rsync --ignore-existing-files --bwlimit=${BND} --progress --append --partial -vz -e 'ssh -p 22' ${src} ${trg}
+    rsync --ignore-existing --bwlimit=${BND} --progress --append --partial -vz -e 'ssh -p 22' ${src} ${trg}
     echo "COMPLETED - SOURCE: ${src} TARGET: ${trg} BANDWIDTH: ${bnd}"
 }
 

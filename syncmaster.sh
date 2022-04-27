@@ -7,7 +7,7 @@ function transfer
     local src=$1
     local trg=$2
     local bnd=$3
-    echo "`date +"%Y-%m-%dT%H:%M:%S"` - STAR - SOURCE: ${src} TARGET: ${trg} BAND: ${bnd}"
+    echo "`date +"%Y-%m-%dT%H:%M:%S"` - START - SOURCE: ${src} TARGET: ${trg} BAND: ${bnd}"
     rsync --ignore-existing --bwlimit=${BND} --progress --append --partial -vz -e 'ssh -p 22' ${src} ${trg} >/dev/null
     RSYNC_STATUS=$?
     if [ $RSYNC_STATUS -eq 0 ]; then

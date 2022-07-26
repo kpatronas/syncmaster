@@ -1,5 +1,5 @@
 # syncmaster
-rsync with tricks!
+rsync with tricks
 
 Do you want to sync data from / to servers but you miss the following features?
 
